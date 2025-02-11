@@ -20,9 +20,10 @@ st.markdown("---")  # 分隔線
 
 # **1️⃣ 側邊欄：載入模型 & 上傳 CSV**
 st.sidebar.header("📥 載入機器學習模型")
-model_path = "stacking_model.joblib"
-imputer_path = "imputer.joblib"
-scaler_path = "scaler.joblib"
+model_path = "model_web/stacking_model.joblib"
+imputer_path = "model_web/imputer.joblib"
+scaler_path = "model_web/scaler.joblib"
+
 
 try:
     model = joblib.load(model_path)
